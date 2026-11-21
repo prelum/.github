@@ -1,0 +1,25 @@
+name: Idea
+description: A feature, a theme or a change you would like to see.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: Prelum stays one small package with few dependencies, so it helps to start from the document you are trying to make.
+  - type: textarea
+    id: need
+    attributes:
+      label: What are you trying to produce?
+      description: The kind of document and what is missing today. A sketch or a PDF you like helps.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you change?
+      description: How it could work, from the user's side (frontmatter, flag, theme).
+  - type: checkboxes
+    id: help
+    attributes:
+      label: Contributing
+      options:
+        - label: I would like to open a pull request for this.
